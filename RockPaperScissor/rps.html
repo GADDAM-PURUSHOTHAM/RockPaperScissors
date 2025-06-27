@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="rps.css" />
+  <script defer src="rps.js"></script>
+</head>
+<body>
+  <div class="k">
+    <h1><u><b>ROCK-PAPER-SCISSORS GAME</b></u></h1>
+  </div>
+
+  <div class="games">
+    <div class="img1">
+      <img src="IMG_20240424_075744.jpg" alt="Rock" onclick="play('rock')" />
+    </div>
+    <div class="img2">
+      <img src="IMG_20240424_075701.jpg" alt="Paper" onclick="play('paper')" />
+    </div>
+    <div class="img3">
+      <img src="IMG_20240424_074754.jpg" alt="Scissor" onclick="play('scissor')" />
+    </div>
+  </div>
+
+  <div class="score">
+    <div class="userscore">
+      <h3>Your Score</h3>
+      <h4 id="us">0</h4>
+    </div>
+    <div class="compscore">
+      <h3>Computer Score</h3>
+      <h4 id="cs">0</h4>
+    </div>
+  </div>
+
+  <div class="whowon">
+    <p id="para">Who Is Won?</p>
+    <br>
+    <p id="user-move">Your Move: -</p>
+    <p id="comp-move">Computer's Move: -</p>
+  </div>
+
+  <div class="bu">
+    <button id="button" onclick="resetGame()">Restart</button>
+  </div>
+</body>
+</html>
+
